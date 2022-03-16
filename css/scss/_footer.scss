@@ -1,0 +1,19 @@
+
+footer {
+  padding: 20px 0;
+  background: $text-color;
+  @include boxShadow(0 0 0 10px $text-color);
+  p {
+    color: $primary-color-light;
+    @include d(s) {
+      text-align: center;
+    }
+  }
+  a img {
+    float: left;
+    @include d(s){
+      float: none;
+      margin: 20px auto;
+    }
+  }
+}

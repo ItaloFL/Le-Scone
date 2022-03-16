@@ -1,0 +1,83 @@
+
+.contato {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  @include d(s){
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+.contato form {
+  label {
+    @include tipo-1(18);
+    display: block;
+  }
+  input[type="text"], textarea {
+    @include tipo-1(18);
+    color: $text-color;
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    border: 2px solid $primary-color-dark;
+    background: transparent;
+    margin-bottom: 1em;
+    &:hover, &:focus {
+      outline: none;
+      border-color: $primary-color-medium;
+    }
+  }
+}
+
+input.button {
+  @include tipo-1(18);
+  cursor: pointer;
+  color: $primary-color-dark;
+  text-transform: uppercase;
+  border: 2px solid $primary-color-dark;
+  background: transparent;
+  display: block;
+  width: 200px;
+  padding-top: 5px;
+  @include boxShadow(5px 5px 0 -2px $primary-color-medium, 5px 5px 0 0 $primary-color-dark);
+  transition: .3s;
+  &:hover {
+    @include boxShadow(3px 3px 0 -2px $primary-color-medium, 3px 3px 0 0 $primary-color-dark);
+  }
+}
+
+.contato-infos {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 60px;
+  input {
+    height: 40px;
+    padding-top: 5px;
+    margin: 5px;
+  }
+  @include d(s){
+    flex-direction: column;
+    margin-bottom: 40px;
+    .contato-info{
+      margin-top: 20px;
+      justify-items: start;
+      align-self: flex-start;
+    }
+  }
+}
+
+.contato-info {
+  display: inline-block;
+  color: $primary-color-dark;
+  text-align: right; 
+}
+
+.contato-mapa {
+  display: block;
+  @include boxShadow(0 0 0 10px $primary-color-medium);
+  img {
+    width: 100%;
+  }
+}
