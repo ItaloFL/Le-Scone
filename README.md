@@ -25,7 +25,7 @@ O Projeto foi feito no Curso Origamid, CSS com SASS, onde usamos o pré-processa
 ## 🛠 Ferramentas
 
 - [HTML]()
-- [CSS]()
+- [SASS]()
 
 ---
 
